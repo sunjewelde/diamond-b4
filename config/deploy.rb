@@ -9,7 +9,8 @@ set :repo_url, '${git@github.com:sunjewelde/diamond-b4.git}'
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-set :branch, 'master'
+# set :branch, 'master'
+set :branch, 'test1'
 # set :deploy_to, '/var/www/dev.my_app.com/'
 set :deploy_to, '/var/www/app/${diamond-b4}'
 
