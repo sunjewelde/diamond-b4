@@ -6,7 +6,8 @@ gem 'rails', '4.2.3'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', group: :development
 # 本番ではpostgressを使用する
-gem 'pg', group: :production
+gem 'mysql2', group: :production
+# gem 'pg', group: :production
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -30,6 +31,13 @@ gem "chartkick"
 gem 'kaminari'
 gem 'ransack'
 gem 'pry-byebug', group: :development
+
+gem 'rb-readline'
+gem 'unicorn'
+gem 'capistrano', '>= 3'
+gem 'capistrano-bundler'
+gem 'capistrano-rbenv', github: "capistrano/rbenv"
+gem 'capistrano-rails'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

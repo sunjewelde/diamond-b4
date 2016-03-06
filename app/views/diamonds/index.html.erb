@@ -5,14 +5,17 @@
 	<p>
 	<%= link_to "チャート詳細", tables_chart_second_path, class: "btn btn-primary btn-lg" %>
 	</p>
-	<%= render 'diamond_chart' %>
+	<% if @latest_weight_group_03 != nil %>
+		<%= render 'diamond_chart' %>
+	<% end %>
 	
-	<h3 class="user_margin1">ダイヤモンド相場価格 <span class="label label-default">0.3カラット-<%= @latest_date %></span></h3>
-	<p>
-	<%= link_to "相場価格詳細", lists_show_path, class: "btn btn-primary btn-lg" %>
-	</p>
-	<%= render 'diamond_market' %>
-
+	<% if @latest_chart_table_weight_group_03 != nil %>
+		<h3 class="user_margin1">ダイヤモンド相場価格 <span class="label label-default">0.3カラット-<%= @latest_date %></span></h3>
+		<p>
+		<%= link_to "相場価格詳細", lists_show_path, class: "btn btn-primary btn-lg" %>
+		</p>
+		<%= render 'diamond_market' %>
+	<% end %>
 
 
 </div>
