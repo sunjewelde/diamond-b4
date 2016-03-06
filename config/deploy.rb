@@ -12,7 +12,8 @@ set :repo_url, '${git@github.com:sunjewelde/diamond-b4.git}'
 # set :branch, 'master'
 set :branch, 'test1'
 # set :deploy_to, '/var/www/dev.my_app.com/'
-set :deploy_to, '/var/www/app/${diamond-b4}'
+# set :deploy_to, '/var/www/app/${diamond-b4}'
+set :deploy_to, '/var/www/dev.my_app.com/${diamond-b4}'
 
 # Default value for :scm is :git
 set :scm, :git
